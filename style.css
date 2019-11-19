@@ -34,17 +34,17 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: #003147;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
+  background: #3db5c2;
+  box-shadow: 0 -2px 5px 5px rgba(0, 84, 122, 0.25);
+  position: absolute;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.4);
-  transition: all 0.3s ease-in-out;
+  background: #d8f0f3;
 }
 
 a, a:link, a:hover, a:focus {
@@ -59,7 +59,7 @@ a.lite {
 a.lite:hover {
   color: #003147;
   text-decoration: none;
-  background: #51bcc8;
+  background: #3db5c2;
   transform: scale(1.05);
   border: none;
   display: inline-block;
@@ -71,7 +71,7 @@ h1, h2, h3 {
 }
 
 .btn, .btn:hover, .btn:focus {
-  background: #51bcc8;
+  background: #3db5c2;
   border-radius: 0;
   color: #FFF;
   font-size: 1.1rem;
@@ -95,7 +95,7 @@ h1, h2, h3 {
 }
 
 .btn-primary {
-  border: 2px solid #51bcc8 !important;
+  border: 2px solid #3db5c2 !important;
 }
 .btn-primary:hover {
   border: 2px solid #00547a !important;
@@ -107,8 +107,8 @@ h1, h2, h3 {
 
 .btn-white-bg {
   background: none;
-  color: #51bcc8;
-  border: 2px solid #51bcc8 !important;
+  color: #3db5c2;
+  border: 2px solid #3db5c2 !important;
 }
 .btn-white-bg:hover {
   color: #FFF;
@@ -116,12 +116,12 @@ h1, h2, h3 {
 }
 
 .brand {
-  color: #51bcc8 !important;
+  color: #3db5c2 !important;
 }
 
 @media (min-width: 768px) {
   .brand-bl::before {
-    background: #51bcc8;
+    background: #3db5c2;
     content: " ";
     display: block;
     height: 4px;
@@ -270,8 +270,8 @@ h2 {
 }
 .social-icons a {
   background: #FFF;
-  border: 2px solid #51bcc8;
-  color: #51bcc8 !important;
+  border: 2px solid #3db5c2;
+  color: #3db5c2 !important;
   display: inline-block;
   font-size: 2rem;
   height: 75px;
@@ -325,8 +325,8 @@ h2 {
   }
 }
 .card-list:hover {
-  border: 4px solid #51bcc8;
-  box-shadow: 0 10px 0 0 #51bcc8;
+  border: 4px solid #3db5c2;
+  box-shadow: 0 10px 0 0 #3db5c2;
 }
 .card-list a {
   color: #003147;
@@ -334,7 +334,7 @@ h2 {
 }
 .card-list a:hover {
   text-decoration: none;
-  color: #51bcc8;
+  color: #3db5c2;
 }
 
 #Work .card-list {
@@ -347,19 +347,41 @@ h2 {
   padding: 0 !important;
 }
 .blog-articles li a {
-  font-size: 1.2rem;
-  color: #003147;
-  border: 4px dashed #d8f0f3;
-  padding: 1.5rem !important;
+  font-size: 1.4rem;
+  color: #3db5c2;
+  outline: 4px dashed #d8f0f3;
+  padding: 4rem 2.5rem !important;
+  overflow: hidden;
   text-align: center;
   display: block;
   margin-bottom: 1rem;
+  background-image: linear-gradient(0deg, #FFF 25%, #d8f0f3 25%, #d8f0f3 50%, #FFF 50%, #FFF 75%, #d8f0f3 75%, #d8f0f3 100%);
+  background-size: 120px 120px;
+}
+@media (max-width: 767px) {
+  .blog-articles li a {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+.blog-articles li a::before {
+  content: open-quote;
+  position: absolute;
+  margin: -40px 0 0 -90px;
+  font-size: 12rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  color: #77cbd4;
+  transition: all 0.3s ease-in-out;
 }
 .blog-articles li a:hover {
-  color: #51bcc8;
-  border: 4px dashed #51bcc8;
-  padding: 1.5rem !important;
+  color: #003147;
+  outline: 4px dashed #3db5c2;
+  padding: 4rem 2.5rem !important;
   text-decoration: none;
+}
+.blog-articles li a:hover::before {
+  color: #3db5c2;
 }
 
 #End-Game {
@@ -380,8 +402,8 @@ h2 {
   }
 }
 #End-Game .monogram:hover {
-  color: #51bcc8;
-  border: 4px solid #51bcc8 !important;
+  color: #3db5c2;
+  border: 4px solid #3db5c2 !important;
 }
 #End-Game .monogram:hover::before {
   content: "⬆";
@@ -414,7 +436,7 @@ h2 {
 }
 #End-Game .footer-icon-links a:hover {
   text-decoration: none;
-  color: #51bcc8;
+  color: #3db5c2;
 }
 #End-Game .ajit {
   color: #FFF;

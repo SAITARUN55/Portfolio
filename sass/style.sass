@@ -29,15 +29,15 @@ body
 	width: 10px
 
 ::-webkit-scrollbar-track
-	background: #000
+	background: $off-dark
 
 ::-webkit-scrollbar-thumb
-	background: hsla(0, 0%, 100%, .3)
-	border-radius: 5px
+	background: $brand
+	box-shadow: 0 -2px 5px 5px hsla(199, 100%, 24%, .25)
+	position: absolute
 
 ::-webkit-scrollbar-thumb:hover
-	background: hsla(0, 0%, 100%, .4)
-	transition: $transition-val
+	background: $highlight
 
 a, a:link, a:hover, a:focus
 	border-bottom: 2px solid transparent
@@ -285,18 +285,35 @@ h2
 	margin: 1rem 0 0
 	padding: 0 !important
 	li a
-		font-size: 1.2rem
-		color: $off-dark
-		border: 4px dashed $highlight
-		padding: 1.5rem !important
+		font-size: 1.4rem
+		color: $brand
+		outline: 4px dashed $highlight
+		padding: 4rem 2.5rem !important
+		overflow: hidden
 		text-align: center
 		display: block
 		margin-bottom: 1rem
+		background-image: linear-gradient(0deg, #FFF 25%, $highlight 25%, $highlight 50%, #FFF 50%, #FFF 75%, $highlight 75%, $highlight 100%)
+		background-size: 120px 120px
+		@media( #{$bp-sm})
+			margin-top: 2rem
+			margin-bottom: 0
+		&::before
+			content: open-quote
+			position: absolute
+			margin: -40px 0 0 -90px
+			font-size: 12rem
+			line-height: 1.4rem
+			font-weight: 700
+			color: $off-brand
+			transition: $transition-val
 		&:hover
-			color: $brand
-			border: 4px dashed $brand
-			padding: 1.5rem !important
+			color: $off-dark
+			outline: 4px dashed $brand
+			padding: 4rem 2.5rem !important
 			text-decoration: none
+			&::before
+				color: $brand
 
 #End-Game
 	color: #FFF
