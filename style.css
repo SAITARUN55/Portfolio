@@ -70,6 +70,10 @@ h1, h2, h3 {
   letter-spacing: 2px;
 }
 
+.sans-serif {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif !important;
+}
+
 .btn, .btn:hover, .btn:focus {
   background: #3db5c2;
   border-radius: 0;
@@ -307,6 +311,12 @@ h2 {
   background: #FFF;
 }
 
+@media (max-width: 767px) {
+  #About .img-fluid {
+    margin: 2rem 0;
+  }
+}
+
 .card-list {
   background: #FFF;
   border: 4px solid #d8f0f3;
@@ -318,6 +328,28 @@ h2 {
   transition: all 0.3s ease-in-out;
   width: 100%;
 }
+.card-list img {
+  width: 100%;
+  display: block;
+  margin: 1.5rem 0;
+}
+.card-list img.logo {
+  width: 55%;
+  margin: 1.5rem 22.5%;
+}
+.card-list h4 {
+  text-align: center;
+  color: #003147;
+}
+.card-list h6 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.card-list h6::before {
+  content: "FOR: ";
+  font-size: 1rem;
+  color: gray;
+}
 @media (min-width: 768px) {
   .card-list {
     margin: 1rem 1%;
@@ -328,13 +360,25 @@ h2 {
   border: 4px solid #3db5c2;
   box-shadow: 0 10px 0 0 #3db5c2;
 }
+.card-list:hover a {
+  color: #3db5c2;
+}
 .card-list a {
   color: #003147;
   text-align: center;
+  margin-right: 1.5rem;
+}
+@media (max-width: 767px) {
+  .card-list a {
+    display: block;
+    margin: 1rem 0 0;
+  }
 }
 .card-list a:hover {
   text-decoration: none;
-  color: #3db5c2;
+  color: #003147;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
 }
 
 #Work .card-list {
@@ -354,7 +398,7 @@ h2 {
   overflow: hidden;
   text-align: center;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   background-image: linear-gradient(0deg, #FFF 25%, #d8f0f3 25%, #d8f0f3 50%, #FFF 50%, #FFF 75%, #d8f0f3 75%, #d8f0f3 100%);
   background-size: 120px 120px;
 }
