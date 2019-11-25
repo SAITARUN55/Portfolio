@@ -13,12 +13,14 @@ html {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
   background: #77cbd4;
   color: #000;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
   font-size: 16px;
   overflow-y: auto;
   transition: all 0.3s ease-in-out;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -54,15 +56,18 @@ a, a:link, a:hover, a:focus {
 
 a.lite {
   color: inherit;
-  text-decoration: underline;
+  background-image: linear-gradient(transparent 0%, transparent calc(50% - 8px), #d8f0f3 calc(50% - 8px), #d8f0f3 100%);
+  transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
+  background-size: 100% 250%;
+  padding: 0 5px;
+  background-position: 0 0;
 }
 a.lite:hover {
   color: #003147;
+  padding: 2px 5px 4px;
   text-decoration: none;
-  background: #3db5c2;
-  transform: scale(1.05);
-  border: none;
-  display: inline-block;
+  background-image: linear-gradient(transparent 0%, transparent calc(50% - 8px), #3db5c2 calc(50% - 8px), #3db5c2 100%);
+  background-position: 0 100%;
 }
 
 h1, h2, h3 {
@@ -436,9 +441,9 @@ h2 {
 }
 #End-Game .monogram {
   border: 5px solid #FFF !important;
+  font-size: 3rem;
   margin: 0 0 2rem;
   padding: 1rem 1.5rem;
-  font-size: 3rem;
 }
 @media (min-width: 768px) {
   #End-Game .monogram {
@@ -446,13 +451,13 @@ h2 {
   }
 }
 #End-Game .monogram:hover {
+  border: 5px solid #3db5c2 !important;
   color: #3db5c2;
-  border: 4px solid #3db5c2 !important;
 }
 #End-Game .monogram:hover::before {
   content: "⬆";
-  position: absolute;
   margin: -80px 0 0 20px;
+  position: absolute;
 }
 @media (max-width: 767px) {
   #End-Game p.lead {
@@ -468,10 +473,10 @@ h2 {
   }
 }
 #End-Game .footer-icon-links a {
-  font-size: 2rem;
-  margin: 0 1.5rem 1rem 0;
   color: #FFF;
   display: inline-block;
+  font-size: 2rem;
+  margin: 0 1.5rem 1rem 0;
 }
 @media (min-width: 768px) {
   #End-Game .footer-icon-links a {
@@ -479,19 +484,19 @@ h2 {
   }
 }
 #End-Game .footer-icon-links a:hover {
-  text-decoration: none;
   color: #3db5c2;
+  text-decoration: none;
 }
 #End-Game .ajit {
-  color: #FFF;
-  text-decoration: none;
   border-bottom: 3px solid #FFF;
-  padding-bottom: 3px;
+  color: #FFF;
   margin-bottom: 3px;
+  padding-bottom: 3px;
+  text-decoration: none;
 }
 #End-Game .ajit:hover {
-  padding-bottom: 6px;
   margin-bottom: 0;
+  padding-bottom: 6px;
 }
 
 .fade-in {
