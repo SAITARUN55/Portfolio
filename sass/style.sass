@@ -263,53 +263,63 @@ h2
 		@media( #{$bp-sm})
 			margin: 2rem 0
 
-.card-list
-	background: #FFF
-	border: 4px solid $highlight
-	box-shadow: 0 10px 0 0 $highlight
-	display: block
-	float: left
-	margin: 1rem 0
-	padding: 1.5rem
-	transition: $transition-val
-	width: 100%
-	img
-		width: 100%
-		display: block
-		margin: 1.5rem 0
-		&.logo
-			width: 55%
-			margin: 1.5rem 22.5%
-	h4
-		text-align: center
-		color: $off-dark
-	h6
-		text-align: center
-		margin-bottom: 1.5rem
-		&::before
-			content: "FOR: "
-			font-size: 1rem
-			color: hsl(0,0%,50%)
+.cards-group
+	list-style: none
+	display: grid
+	padding: 0
+	grid-template-columns: 100%
+	grid-column-gap: 0
+	grid-row-gap: 2rem
 	@media( #{$bp-md})
-		margin: 1rem 1%
-		width: 48%
-	&:hover
-		border: 4px solid $brand
-		box-shadow: 0 10px 0 0 $brand
-		a
-			color: $brand
-	a
-		color: $off-dark
-		text-align: center
-		margin-right: 1.5rem
-		@media( #{$bp-sm})
+		display: grid
+		grid-template-columns: 50% 50%
+		grid-column-gap: 1rem
+		grid-row-gap: 2rem
+	li
+		background: #FFF
+		border: 4px solid $highlight
+		box-shadow: 0 10px 0 0 $highlight
+		display: block
+		float: left
+		// margin: .5rem
+		padding: 1.5rem
+		transition: $transition-val
+		width: 100%
+		img
+			width: 100%
 			display: block
-			margin: 1rem 0 0
-		&:hover
-			text-decoration: none
+			margin: 1.5rem 0
+			&.logo
+				width: 55%
+				margin: 1.5rem 22.5%
+		h4
+			text-align: center
 			color: $off-dark
-			margin-left: .5rem
-			margin-right: 1rem
+		h6
+			text-align: center
+			margin-bottom: 1.5rem
+			&::before
+				content: "FOR: "
+				font-size: 1rem
+				color: hsl(0,0%,50%)
+		&:hover
+			border: 4px solid $brand
+			box-shadow: 0 10px 0 0 $brand
+			a
+				color: $brand
+		a
+			color: $off-dark
+			text-align: center
+			margin-right: 1.5rem
+			display: inline-block
+			float: left
+			@media( #{$bp-sm})
+				margin: 1rem 0 0
+			&:hover
+				text-decoration: none
+				color: $off-dark
+				margin-left: .5rem
+				margin-right: 1rem
 
 #Work
 	.card-list
@@ -407,5 +417,6 @@ h2
 	transition: margin-top 0.3s ease-in-out 1s, color 0.3s ease-in-out 0s
 
 .slide-up
-	margin-top: 200px
+	margin-top: 500px
+	opacity: 0
 	transition: $transition-val 1s

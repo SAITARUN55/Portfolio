@@ -322,64 +322,74 @@ h2 {
   }
 }
 
-.card-list {
+.cards-group {
+  list-style: none;
+  display: grid;
+  padding: 0;
+  grid-template-columns: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 2rem;
+}
+@media (min-width: 768px) {
+  .cards-group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+  }
+}
+.cards-group li {
   background: #FFF;
   border: 4px solid #d8f0f3;
   box-shadow: 0 10px 0 0 #d8f0f3;
   display: block;
   float: left;
-  margin: 1rem 0;
   padding: 1.5rem;
   transition: all 0.3s ease-in-out;
   width: 100%;
 }
-.card-list img {
+.cards-group li img {
   width: 100%;
   display: block;
   margin: 1.5rem 0;
 }
-.card-list img.logo {
+.cards-group li img.logo {
   width: 55%;
   margin: 1.5rem 22.5%;
 }
-.card-list h4 {
+.cards-group li h4 {
   text-align: center;
   color: #003147;
 }
-.card-list h6 {
+.cards-group li h6 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.card-list h6::before {
+.cards-group li h6::before {
   content: "FOR: ";
   font-size: 1rem;
   color: gray;
 }
-@media (min-width: 768px) {
-  .card-list {
-    margin: 1rem 1%;
-    width: 48%;
-  }
-}
-.card-list:hover {
+.cards-group li:hover {
   border: 4px solid #3db5c2;
   box-shadow: 0 10px 0 0 #3db5c2;
 }
-.card-list:hover a {
+.cards-group li:hover a {
   color: #3db5c2;
 }
-.card-list a {
+.cards-group li a {
   color: #003147;
   text-align: center;
   margin-right: 1.5rem;
+  display: inline-block;
+  float: left;
 }
 @media (max-width: 767px) {
-  .card-list a {
-    display: block;
+  .cards-group li a {
     margin: 1rem 0 0;
   }
 }
-.card-list a:hover {
+.cards-group li a:hover {
   text-decoration: none;
   color: #003147;
   margin-left: 0.5rem;
@@ -510,7 +520,8 @@ h2 {
 }
 
 .slide-up {
-  margin-top: 200px;
+  margin-top: 500px;
+  opacity: 0;
   transition: all 0.3s ease-in-out 1s;
 }
 
