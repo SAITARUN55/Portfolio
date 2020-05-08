@@ -34,11 +34,18 @@
 
 	<title>Kaniganti Sai Tarun | Portfolio</title>
 
+	<!-- Preconnect stuff -->
+	<link rel="preconnect" href="https://unpkg.com/" crossorigin>
+	<link rel="dns-prefetch" href="https://unpkg.com/" crossorigin>
+
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- Fontawesome CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+	<!-- AOS CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" crossorigin/>
 
 	<!-- Font CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -49,7 +56,7 @@
 
 <body>
 	<!-- Navigation section -->
-	<nav id="TopMenu" class="navbar navbar-expand-xl fixed-top">
+	<nav data-aos="fade-down" data-aos-delay="700" id="TopMenu" class="navbar navbar-expand-xl fixed-top">
 		<div class="container">
 			<a class="navbar-brand monogram" href="#Home">KST</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#PrimaryMenu" aria-controls="menu" aria-expanded="false" aria-label="Toggle Navigation">
@@ -77,18 +84,18 @@
 	<div id="wrapper" class="container-fluid">
 		<div id="Home" class="container-fluid">
 			<div class="row">
-				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2">
+				<div data-aos="fade-up" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2">
 					<img class="img-dp" src="assets/profile.jpg" alt="Kaniganti Sai Tarun">
 				</div>
 				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-1">
-					<h1 class="">Hi, I'm Sai&nbsp;Tarun</h1>
-					<p class="lead">I'm a creative Android developer based in India, currently working remotely at <a href="https://www.smallplanet.com/" rel="noopener noreferrer" target="_blank" class="lite">Small Planet</a>. I'm huge into open-source development and ❤ to contribute back to the community. Interested in working together? Drop me a line!</p>
-					<a href="mailto:saitarunkaniganti@gmail.com" class="btn btn-primary">Hire Me!</a>
+					<h1 data-aos="fade-up" data-aos-delay="200">Hi, I'm Sai&nbsp;Tarun</h1>
+					<p data-aos="fade-up" data-aos-delay="400" class="lead">I'm a creative Android developer based in India, currently working remotely at <a href="https://www.smallplanet.com/" rel="noopener noreferrer" target="_blank" class="lite">Small Planet</a>. I'm huge into open-source development and ❤ to contribute back to the community. Interested in working together? Drop me a line!</p>
+					<a data-aos="fade-up" data-aos-delay="600" href="mailto:saitarunkaniganti@gmail.com" class="btn btn-primary">Hire Me!</a>
 				</div>
 			</div>
 		</div>
 		<div id="Social" class="container-fluid">
-			<div class="row">
+			<div data-aos="fade-up" class="row">
 				<div class="col-12 col-md-8 offset-md-2">
 					<div class="social-icons text-center">
 						<a rel="noopener noreferrer" target="_blank" href="https://github.com/SAITARUN55">
@@ -119,7 +126,7 @@
 
 		<div id="About" class="container-fluid section">
 			<div class="row">
-				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
+				<div data-aos="fade-right" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
 					<h3 class="brand">About Me</h3>
 					<h2>Specialist by need, Generalist by heart</h2>
 					<p class="lead">I've worked with full-stack systems for <strong>web</strong> and <strong>mobile</strong>, using whatever suits the project best. "Best" is of course subjective, so I keep exploring new options such as Flutter and others as they come!</p>
@@ -127,20 +134,20 @@
 						Check out my work
 					</a>
 				</div>
-				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-0">
+				<div data-aos="fade-up" data-aos-delay="200" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-0">
 					<img src="/assets/about-dp.jpg" alt="Kaniganti Sai Tarun" class="img-fluid">
 				</div>
 				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-0 sans-serif">
-					<p>I've previously worked for <strong>Accenture</strong> before moving on to <strong>Small Planet</strong>, where I currently work remotely as an Android Developer, primarily using Flutter for some cool stuff ✨</p>
-					<p class="lead">I'm a Google India &amp; PyTorch Udacity Scholar, and currently under Bertelsmann Scholarship. I'm also a Student Mentor for <strong>Udacity</strong> and contribute actively to several open-source communities such as <strong>AnitaB.org</strong> and <strong>FOSSASIA</strong>.</p>
-					<p class="san-serif">As a student I've completed two internships, one with <strong>Shamgar Software Solutions</strong> and <strong>eBiz Solutions, LLC</strong> I've been a Campus Ambassador for <strong>GeeksForGeeks</strong> as well as for multiple college fests like <strong>Techfest, IIT-B</strong> and <strong>BITS-Pilani, Hyd Campus</strong>, amongst others.</p>
+					<p data-aos="fade-up" data-aos-delay="400">I've previously worked for <strong>Accenture</strong> before moving on to <strong>Small Planet</strong>, where I currently work remotely as an Android Developer, primarily using Flutter for some cool stuff ✨</p>
+					<p data-aos="fade-up" data-aos-delay="450" class="lead">I'm a Google India &amp; PyTorch Udacity Scholar, and currently under Bertelsmann Scholarship. I'm also a Student Mentor for <strong>Udacity</strong> and contribute actively to several open-source communities such as <strong>AnitaB.org</strong> and <strong>FOSSASIA</strong>.</p>
+					<p data-aos="fade-up" data-aos-delay="500" class="san-serif">As a student I've completed two internships, one with <strong>Shamgar Software Solutions</strong> and <strong>eBiz Solutions, LLC</strong> I've been a Campus Ambassador for <strong>GeeksForGeeks</strong> as well as for multiple college fests like <strong>Techfest, IIT-B</strong> and <strong>BITS-Pilani, Hyd Campus</strong>, amongst others.</p>
 				</div>
 			</div>
 		</div>
 
 		<div id="Work" class="container-fluid section">
 			<div class="row">
-				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
+				<div data-aos="fade-right" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
 					<h3 class="brand">Work</h3>
 					<h2>Some Projects Feel Different</h2>
 					<p class="lead">I've dabbled in everything from web &amp; app development to game development and machine learning. These aren't just buzzwords, they're the future.</p>
@@ -154,7 +161,7 @@
 					</a>
 				</div>
 				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-0">
-					<ul class="cards-group">
+					<ul data-aos="fade-up" data-aos-delay="400" class="cards-group">
 						<li>
 							<img src="/assets/work/mentorship-android.png" alt="Mentorship Android App">
 							<h4>Mentorship Android App</h4>
@@ -190,7 +197,6 @@
 							<a rel="noopener noreferrer" target="_blank" href="https://github.com/project-travel-mate/Travel-Mate">View&nbsp;Project&nbsp;→</a>
 							<a rel="noopener noreferrer" target="_blank" href="https://play.google.com/store/apps/details?id=io.github.project_travel_mate">View Live →</a>
 						</li>
-						
 					</ul>
 				</div>
 			</div>
@@ -198,7 +204,7 @@
 
 		<div id="Blog" class="container-fluid section">
 			<div class="row">
-				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
+				<div data-aos="fade-right" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
 					<h3 class="brand">Blog</h3>
 					<h2>The written word travels far</h2>
 					<p class="lead">I've written several articles over the years on Medium and elsewhere. Here's one!</p>
@@ -207,7 +213,7 @@
 						Medium
 					</a>
 				</div>
-				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-1">
+				<div data-aos="fade-up" data-aos-delay="400" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-1">
 					<ul class="blog-articles">
 						<li>
 							<a rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti/from-developer-to-volunteer-to-speaker-fossasia-68e09715cb97">From Developer to Volunteer to Speaker @FOSSASIA</a>
@@ -225,16 +231,16 @@
 				</div>
 			</div>
 			<div class="row mt-5">
-				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
+				<div data-aos="fade-right" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
 					<h3 class="brand">YouTube?</h3>
-					<h2>I make Decent tutorials too</h2>
+					<h2>I make decent tutorials too</h2>
 					<p class="lead">I've started uploading a few videos to start with. All feedback is welcome!</p>
 					<a rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti" class="btn btn-primary">
 						<i class="fab fa-youtube"></i>
 						YouTube
 					</a>
 				</div>
-				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-1">
+				<div data-aos="fade-up" data-aos-delay="400" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-1">
 					<ul class="blog-articles">
 						<li>
 							<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=lulwjpEgoJg&t=1s">Flutter Tutorial for Beginners #1 - Scaffold & AppBar Widgets</a>
@@ -249,7 +255,7 @@
 
 		<div id="Star" class="container-fluid section">
 			<div class="row">
-				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-4 brand-bl">
+				<div data-aos="fade-up" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-4 brand-bl">
 					<h3 class="brand">Like what you see?</h3>
 					<h2>Tell me about your project</h2>
 					<p class="lead">I'm currently actively looking for opportunities to work on interesting projects with an awesome team. <a target="_blank" href="mailto:saitarunkaniganti@gmail.com" class="lite">Email me</a> to get connected or you could send me a 👋 on <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/SAITARUN1997" class="lite">Twitter</a>!</p>
@@ -260,38 +266,38 @@
 		<footer id="End-Game" class="container-fluid">
 			<div class="container">
 				<div class="row">
-					<div class="col-10 offset-1 col-md-2 offset-md-1 col-lg-2 offset-lg-1">
+					<div data-aos="fade-right" class="col-10 offset-1 col-md-2 offset-md-1 col-lg-2 offset-lg-1">
 						<a href="#Home" class="monogram" title="Kaniganti Sai Tarun">KST</a>
 					</div>
 					<div class="col-10 offset-1 col-md-6 offset-md-1 col-lg-5 offset-lg-0">
-						<p class="lead">
+						<p data-aos="fade-up" class="lead">
 							I try to stay active on LinkedIn, Twitter &amp; Instagram at all times, but I never forget to check my mail!
 						</p>
 						<div class="footer-icon-links">
-							<a rel="noopener noreferrer" target="_blank" href="https://github.com/SAITARUN55">
+							<a data-aos="fade-up" data-aos-delay="50" rel="noopener noreferrer" target="_blank" href="https://github.com/SAITARUN55">
 								<i class="fab fa-github"></i>
 							</a>
-							<a rel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/kanigantisaitarun">
+							<a data-aos="fade-up" data-aos-delay="100" rel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/kanigantisaitarun">
 								<i class="fab fa-linkedin"></i>
 							</a>
-							<a rel="noopener noreferrer" target="_blank" href="https://twitter.com/SAITARUN1997">
+							<a data-aos="fade-up" data-aos-delay="150" rel="noopener noreferrer" target="_blank" href="https://twitter.com/SAITARUN1997">
 								<i class="fab fa-twitter"></i>
 							</a>
-							<a rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti">
+							<a data-aos="fade-up" data-aos-delay="200" rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti">
 								<i class="fab fa-medium"></i>
 							</a>
-							<a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/saitarunkaniganti55">
+							<a data-aos="fade-up" data-aos-delay="250" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/saitarunkaniganti55">
 								<i class="fab fa-facebook"></i>
 							</a>
-							<a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/kanigantisaitarun">
+							<a data-aos="fade-up" data-aos-delay="300" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/kanigantisaitarun">
 								<i class="fab fa-instagram"></i>
 							</a>
-							<a rel="noopener noreferrer" target="_blank" href="http://www.youtube.com/c/TravelCuriosity">
+							<a data-aos="fade-up" data-aos-delay="350" rel="noopener noreferrer" target="_blank" href="http://www.youtube.com/c/TravelCuriosity">
 								<i class="fab fa-youtube"></i>
 							</a>
 						</div>
 					</div>
-					<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-2 offset-lg-1 text-center text-lg-left">
+					<div data-aos="fade-up" data-aos-delay="450" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-2 offset-lg-1 text-center text-lg-left">
 						<p>
 							&copy; 2019—Present <br>
 							Kaniganti Sai Tarun.
@@ -311,8 +317,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+	<!-- AOS Js -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 	<!-- Custom Js -->
 	<script>
+		AOS.init({
+			disable: 'phone',
+			easing: 'ease-in-cubic',
+		});
+
 		$(function () {
 			// Make navbar opaque on scroll
 			var navbar = $('.navbar');
