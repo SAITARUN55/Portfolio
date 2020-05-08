@@ -49,7 +49,7 @@
 
 <body>
 	<!-- Navigation section -->
-	<nav id="TopMenu" class="navbar navbar-expand-xl fixed-top slide-down">
+	<nav id="TopMenu" class="navbar navbar-expand-xl fixed-top">
 		<div class="container">
 			<a class="navbar-brand monogram" href="#Home">KST</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#PrimaryMenu" aria-controls="menu" aria-expanded="false" aria-label="Toggle Navigation">
@@ -76,7 +76,7 @@
 
 	<div id="wrapper" class="container-fluid">
 		<div id="Home" class="container-fluid">
-			<div class="row fade-in">
+			<div class="row">
 				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2">
 					<img class="img-dp" src="assets/profile.jpg" alt="Kaniganti Sai Tarun">
 				</div>
@@ -87,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="Social" class="container-fluid slide-up">
+		<div id="Social" class="container-fluid">
 			<div class="row">
 				<div class="col-12 col-md-8 offset-md-2">
 					<div class="social-icons text-center">
@@ -313,29 +313,15 @@
 
 	<!-- Custom Js -->
 	<script>
-		$(document).ready(function(){
-			$('.fade-in').css('opacity', '1');
-			$('.slide-down').css('margin-top', '0');
-			// $('.slide-up').css('margin-top', '0');
-			$('.slide-up').css({
-				marginTop: "0",
-				opacity: "1",
-			});
-		});
-
 		$(function () {
 			// Make navbar opaque on scroll
 			var navbar = $('.navbar');
 
 			function setBg() {
-				navbar.css({
-					'background': '#003249'
-				});
+				navbar.css('background', '#003249');
 			}
 			function unsetBg() {
-				navbar.css({
-					'background': 'none'
-				});
+				navbar.css('background', 'none');
 			}
 
 			$('.navbar-toggler').on('click', function() {
