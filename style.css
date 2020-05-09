@@ -23,11 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-::selection {
-  background: #d8f0f3;
-}
-
-::-moz-selection {
+::selection, ::-moz-selection {
   background: #d8f0f3;
 }
 
@@ -73,6 +69,10 @@ a.lite:hover {
 h1, h2, h3 {
   font-family: "Bebas Neue", Helvetica, serif;
   letter-spacing: 2px;
+}
+
+b, strong {
+  font-weight: 700;
 }
 
 .sans-serif {
@@ -161,6 +161,9 @@ h1, h2, h3 {
 }
 .navbar .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='hsl(4, 80%, 100%)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar.nav-scroll-in {
+  background: #003147;
 }
 
 .nav-link {
@@ -254,6 +257,7 @@ h1, h2, h3 {
 
 #Home {
   background: #77cbd4;
+  background: linear-gradient(160deg, #77cbd4 0%, #3db5c2 36%, #00547a 100%);
   color: #FFF;
   padding-bottom: 11rem;
   padding-top: 11rem;
@@ -280,6 +284,7 @@ h2 {
 .social-icons a {
   background: #FFF;
   border: 2px solid #3db5c2;
+  border-radius: 8px;
   color: #3db5c2 !important;
   display: inline-block;
   font-size: 2rem;
@@ -308,8 +313,8 @@ h2 {
 
 #Social {
   background: #FFF;
-  background-image: linear-gradient(90deg, #FFF 25%, #77cbd4 25%, #77cbd4 50%, #FFF 50%, #FFF 75%, #77cbd4 75%, #77cbd4 100%);
-  background-size: 80px;
+  background-image: linear-gradient(45deg, #FFF 33.33%, #77cbd4 33.33%, #77cbd4 50%, #FFF 50%, #FFF 83.33%, #77cbd4 83.33%, #77cbd4 100%);
+  background-size: 8.5px 8.5px;
 }
 
 #About, #Work, #Blog, #YouTube, #Star {
