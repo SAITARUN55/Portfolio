@@ -1,6 +1,6 @@
 # Portfolio
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg "Built with love")](https://forthebadge.com)
 
 This is the codebase for my personal portfolio!
 
@@ -12,7 +12,7 @@ Have a look at the live version here: https://ksaitarun.com
 
 **Credits:**
 Icons by [Font Awesome](https://fontawesome.com).
-Designed by [Ajit Panigrahi](https://ajitpanigrahi.com).
+Designed by [Ajit Panigrahi](https://twitter.com/AjitZero).
 
 **License:**
 Distributed under the [MIT License](https://opensource.org/licenses/MIT). See [`LICENSE`](https://github.com/SAITARUN55/Portfolio/blob/master/LICENSE) for more information.
