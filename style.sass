@@ -1,3 +1,5 @@
+---
+---
 @import "base"
 
 html, body, #wrapper
@@ -12,6 +14,7 @@ html
 	scroll-behavior: smooth
 
 body
+	-moz-osx-font-smoothing: grayscale
 	-webkit-font-smoothing: antialiased
 	background: $off-brand
 	color: #000
@@ -19,7 +22,6 @@ body
 	font-size: 16px
 	overflow-y: auto
 	transition: $transition-val
-	-moz-osx-font-smoothing: grayscale
 
 ::selection, ::-moz-selection
 	background: $highlight
@@ -43,19 +45,18 @@ a, a:link, a:hover, a:focus
 	transition: $transition-val
 
 a.lite
-	color: inherit
-	// text-decoration: underline
 	background-image: linear-gradient( transparent 0%, transparent calc(50% - 8px), $highlight calc(50% - 8px), $highlight 100%)
-	transition: background-position 120ms ease-in-out, padding 120ms ease-in-out
-	background-size: 100% 250%
-	padding: 0 5px
 	background-position: 0 0
+	background-size: 100% 250%
+	color: inherit
+	padding: 0 5px
+	transition: background-position 120ms ease-in-out, padding 120ms ease-in-out
 	&:hover
+		background-image: linear-gradient( transparent 0%, transparent calc(50% - 8px), $brand calc(50% - 8px), $brand 100%)
+		background-position: 0 100%
 		color: $off-dark
 		padding: 2px 5px 4px
 		text-decoration: none
-		background-image: linear-gradient( transparent 0%, transparent calc(50% - 8px), $brand calc(50% - 8px), $brand 100%)
-		background-position: 0 100%
 
 h1, h2, h3
 	font-family: $serif
@@ -77,8 +78,8 @@ b, strong
 	margin: 1rem 0
 	outline: none
 	padding: 1rem 0
-	width: 100%
 	text-transform: uppercase
+	width: 100%
 	@media( #{$bp-md})
 		padding: 1rem 2.5rem
 		width: auto
@@ -96,11 +97,11 @@ b, strong
 
 .btn-white-bg
 	background: none
-	color: $brand
 	border: 2px solid $brand !important
+	color: $brand
 	&:hover
-		color: #FFF
 		border: 2px solid $off-brand !important
+		color: #FFF
 
 .brand
 	color: $brand !important
@@ -170,8 +171,8 @@ b, strong
 		.nav-link
 			color: #FFF !important
 			@media( #{$bp-lg})
-				margin-top: 20px
 				margin-bottom: 0
+				margin-top: 20px
 				&::before
 					background: #FFF
 					content: " "
@@ -205,10 +206,10 @@ b, strong
 	padding: .5rem
 	transition: $transition-val
 	&:hover
-		color: $off-brand
-		text-decoration: none
 		background: $off-dark
 		border: 2px solid $off-brand !important
+		color: $off-brand
+		text-decoration: none
 
 // Main Page
 #Home
@@ -234,8 +235,8 @@ h2
 	margin: 3rem 0
 	a
 		background: #FFF
-		border: 2px solid $brand
 		border-radius: 8px
+		border: 2px solid $brand
 		color: $brand !important
 		display: inline-block
 		font-size: 2rem
@@ -255,7 +256,7 @@ h2
 		margin: -37.5px 0 3rem
 
 #Social
-	background: #FFF
+	background-color: #FFF
 	background-image: linear-gradient(45deg, #FFF 33.33%, $off-brand 33.33%, $off-brand 50%, #FFF 50%, #FFF 83.33%, $off-brand 83.33%, $off-brand 100%)
 	background-size: 8.5px 8.5px
 
@@ -268,43 +269,42 @@ h2
 			margin: 2rem 0
 
 .cards-group
-	list-style: none
-	padding: 0
 	display: grid
-	grid-template-columns: 100%
 	grid-column-gap: 0
 	grid-row-gap: 2rem
+	grid-template-columns: 100%
+	list-style: none
+	padding: 0
 	@media( #{$bp-md})
-		grid-template-columns: 50% 50%
 		grid-column-gap: 1rem
 		grid-row-gap: 2rem
+		grid-template-columns: 50% 50%
 	li
 		background: #FFF
 		border: 4px solid $highlight
 		box-shadow: 0 10px 0 0 $highlight
 		display: block
 		float: left
-		// margin: .5rem
 		padding: 1.5rem
 		transition: $transition-val
 		width: 100%
 		img
-			width: 100%
 			display: block
 			margin: 1.5rem 0
+			width: 100%
 			&.logo
-				width: 55%
 				margin: 1.5rem 22.5%
+				width: 55%
 		h4
-			text-align: center
 			color: $off-dark
-		h6
 			text-align: center
+		h6
 			margin-bottom: 1.5rem
+			text-align: center
 			&::before
+				color: hsl(0,0%,50%)
 				content: "FOR: "
 				font-size: 1rem
-				color: hsl(0,0%,50%)
 		&:hover
 			border: 4px solid $brand
 			box-shadow: 0 10px 0 0 $brand
@@ -312,51 +312,51 @@ h2
 				color: $brand
 		a
 			color: $off-dark
-			text-align: center
-			margin-right: 1.5rem
 			display: inline-block
 			float: left
+			margin-right: 1.5rem
+			text-align: center
 			@media( #{$bp-sm})
 				margin: 1rem 0 0
 			&:hover
-				text-decoration: none
 				color: $off-dark
 				margin-left: .5rem
 				margin-right: 1rem
+				text-decoration: none
 
 #Work
 	.card-list
 		min-height: 200px
 
 .blog-articles
+	display: grid
+	grid-column-gap: 0
+	grid-row-gap: 3rem
+	grid-template-columns: 100%
 	list-style: none
 	margin: 3rem 0 0
 	padding: 0 !important
-	display: grid
-	grid-template-columns: 100%
-	grid-column-gap: 0
-	grid-row-gap: 3rem
 	@media( #{$bp-md})
-		grid-template-columns: 50% 50%
 		grid-column-gap: 3rem
+		grid-template-columns: 1fr 1fr
 	li a
-		font-size: 1.4rem
 		color: $brand
-		outline: 4px dashed $highlight
-		padding: 4rem 2.5rem !important
-		overflow: hidden
-		text-align: center
 		display: block
+		font-size: 1.4rem
+		outline: 4px dashed $highlight
+		overflow: hidden
+		padding: 4rem 2.5rem !important
+		text-align: center
 		@media( #{$bp-sm})
 			margin-bottom: 0
 		&::before
-			content: open-quote
-			position: absolute
-			margin: -40px 0 0 -90px
-			font-size: 12rem
-			line-height: 1.4rem
-			font-weight: 700
 			color: $off-brand
+			content: open-quote
+			font-size: 12rem
+			font-weight: 700
+			line-height: 1.4rem
+			margin: -40px 0 0 -90px
+			position: absolute
 			transition: $transition-val
 		&:hover
 			color: $off-dark
@@ -367,10 +367,10 @@ h2
 				color: $brand
 
 #End-Game
-	color: #FFF
 	background: $off-dark
-	padding-top: 6rem
+	color: #FFF
 	padding-bottom: 6rem
+	padding-top: 6rem
 	.monogram
 		border: 5px solid #FFF !important
 		font-size: 3rem

@@ -1,26 +1,27 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
-<!-- Source: https://github.com/SAITARUN55/Portfolio -->
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- OpenGraph -->
-	<meta property="og:description" content="I'm a creative Android developer based in India, currently working remotely at Small Planet. I'm huge into open-source development and love to contribute back to the community. Interested in working together? Drop me a line!">
-	<meta property="og:image:height" content="1440" />
-	<meta property="og:image:width" content="1080" />
-	<meta property="og:image" content="http://ksaitarun.com/assets/profile.jpg">
-	<meta property="og:site_name" content="Kaniganti Sai Tarun's Portfolio">
-	<meta property="og:title" content="Kaniganti Sai Tarun's Portfolio">
+	<meta property="og:description" content="{{ site.description }}">
+	<meta property="og:image:height" content="{{ site.og.image_height }}" />
+	<meta property="og:image:width" content="{{ site.og.image_width }}" />
+	<meta property="og:image" content="{{ site.og.image_url }}">
+	<meta property="og:site_name" content="{{ site.og.title }}">
+	<meta property="og:title" content="{{ site.og.title }}">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://ksaitarun.com">
+	<meta property="og:url" content="{{ site.url }}">
 
 	<!-- Twitter Cards -->
-	<meta name="twitter:creator" content="@SAITARUN1997">
-	<meta name="twitter:description" content="I'm a creative Android developer based in India, currently working remotely at Small Planet. I'm huge into open-source development and love to contribute back to the community. Interested in working together? Drop me a line!">
-	<meta name="twitter:image" content="http://ksaitarun.com/assets/profile.jpg">
-	<meta name="twitter:site" content="@SAITARUN1997">
-	<meta name="twitter:title" content="Kaniganti Sai Tarun's Portfolio">
+	<meta name="twitter:creator" content="@{{ site.social.twitter_id }}">
+	<meta name="twitter:description" content="{{ site.description }}">
+	<meta name="twitter:image" content="{{ site.og.image_url }}">
+	<meta name="twitter:site" content="@{{ site.social.twitter_id }}">
+	<meta name="twitter:title" content="{{ site.og.title }}">
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
@@ -38,10 +39,10 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 	<link rel="manifest" href="assets/favicon/manifest.json">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="msapplication-TileColor" content="#77cbd4">
-	<meta name="theme-color" content="#77cbd4">
+	<meta name="msapplication-TileColor" content="{{ site.theme_color }}">
+	<meta name="theme-color" content="{{ site.theme_color }}">
 
-	<title>Kaniganti Sai Tarun | Portfolio</title>
+	<title>{{ site.title }}</title>
 
 	<link rel="preconnect" href="https://unpkg.com/" crossorigin>
 	<link rel="dns-prefetch" href="https://unpkg.com/" crossorigin>
@@ -57,13 +58,29 @@
 
 <body>
 	<!-- Navigation section -->
-	<nav data-aos="fade-down" data-aos-delay="700" id="TopMenu" class="navbar navbar-expand-xl fixed-top">
+	<nav
+		class="navbar navbar-expand-xl fixed-top"
+		data-aos-delay="700"
+		data-aos="fade-down"
+		id="TopMenu">
 		<div class="container">
-			<a class="navbar-brand monogram" href="#Home">KST</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#PrimaryMenu" aria-controls="menu" aria-expanded="false" aria-label="Toggle Navigation">
+			<a
+				class="navbar-brand monogram"
+				href="#Home"
+				title="Kaniganti Sai Tarun">
+				KST
+			</a>
+			<button
+				aria-controls="menu"
+				aria-expanded="false"
+				aria-label="Toggle Navigation"
+				class="navbar-toggler"
+				data-target="#PrimaryMenu"
+				data-toggle="collapse"
+				type="button">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div id="PrimaryMenu" class="collapse navbar-collapse">
+			<div class="collapse navbar-collapse" id="PrimaryMenu">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
 						<a class="nav-link" href="#Home">Home</a>
@@ -85,13 +102,34 @@
 	<div id="wrapper" class="container-fluid">
 		<div id="Home" class="container-fluid">
 			<div class="row">
-				<div data-aos="fade-up" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2">
-					<img class="img-dp" src="assets/profile.jpg" alt="Kaniganti Sai Tarun">
+				<div
+					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2"
+					data-aos="fade-up">
+					<img
+						alt="Kaniganti Sai Tarun"
+						class="img-dp"
+						src="assets/profile.jpg"
+						title="Kaniganti Sai Tarun">
 				</div>
 				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-1">
-					<h1 data-aos="fade-up" data-aos-delay="200">Hi, I'm Sai&nbsp;Tarun</h1>
-					<p data-aos="fade-up" data-aos-delay="400" class="lead">I'm a creative Android developer based in India, currently working remotely at <a href="https://www.smallplanet.com/" rel="noopener noreferrer" target="_blank" class="lite">Small Planet</a>. I'm huge into open-source development and ❤ to contribute back to the community. Interested in working together? Drop me a line!</p>
-					<a data-aos="fade-up" data-aos-delay="600" href="mailto:saitarunkaniganti@gmail.com" class="btn btn-primary">Hire Me!</a>
+					<h1
+						data-aos-delay="200"
+						data-aos="fade-up">
+						Hi, I'm Sai&nbsp;Tarun
+					</h1>
+					<p
+						class="lead"
+						data-aos-delay="400"
+						data-aos="fade-up">
+						I'm a creative Android developer based in India, currently working remotely at <a href="https://www.smallplanet.com/" rel="noopener noreferrer" target="_blank" class="lite">Small Planet</a>. I'm huge into open-source development and ❤ to contribute back to the community. Interested in working together? Drop me a line!
+					</p>
+					<a
+						class="btn btn-primary"
+						data-aos-delay="600"
+						data-aos="fade-up"
+						href="mailto:{{ site.social.email }}">
+						Hire Me!
+					</a>
 				</div>
 			</div>
 		</div>
@@ -99,25 +137,60 @@
 			<div class="row">
 				<div class="col-12 col-md-8 offset-md-2">
 					<div class="social-icons text-center">
-						<a data-aos="fade-up" data-aos-delay="50" rel="noopener noreferrer" target="_blank" href="https://github.com/SAITARUN55">
+						<a
+							data-aos-delay="50"
+							data-aos="fade-up"
+							href="{{ site.social.github }}"
+							rel="noopener noreferrer"
+							target="_blank">
 							<i class="fa fa-github"></i>
 						</a>
-						<a data-aos="fade-up" data-aos-delay="100" rel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/kanigantisaitarun">
+						<a
+							data-aos-delay="100"
+							data-aos="fade-up"
+							href="{{ site.social.linkedin }}"
+							rel="noopener noreferrer"
+							target="_blank">
 							<i class="fa fa-linkedin"></i>
 						</a>
-						<a data-aos="fade-up" data-aos-delay="150" rel="noopener noreferrer" target="_blank" href="https://twitter.com/SAITARUN1997">
+						<a
+							data-aos-delay="150"
+							data-aos="fade-up"
+							href="{{ site.social.twitter_url }}"
+							rel="noopener noreferrer"
+							target="_blank">
 							<i class="fa fa-twitter"></i>
 						</a>
-						<a data-aos="fade-up" data-aos-delay="200" rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti">
+						<a
+							data-aos-delay="200"
+							data-aos="fade-up"
+							href="{{ site.social.medium }}"
+							rel="noopener noreferrer"
+							target="_blank">
 							<i class="fa fa-medium"></i>
 						</a>
-						<a data-aos="fade-up" data-aos-delay="250" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/saitarunkaniganti55">
+						<a
+							data-aos-delay="250"
+							data-aos="fade-up"
+							href="{{ site.social.facebook }}"
+							rel="noopener noreferrer"
+							target="_blank">
 							<i class="fa fa-facebook"></i>
 						</a>
-						<a data-aos="fade-up" data-aos-delay="300" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/kanigantisaitarun">
+						<a
+							data-aos-delay="300"
+							data-aos="fade-up"
+							href="{{ site.social.instagram }}"
+							rel="noopener noreferrer"
+							target="_blank">
 							<i class="fa fa-instagram"></i>
 						</a>
-						<a data-aos="fade-up" data-aos-delay="350" rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/c/TravelCuriosity">
+						<a
+							data-aos-delay="350"
+							data-aos="fade-up"
+							href="{{ site.social.youtube }}"
+							rel="noopener noreferrer"
+							target="_blank">
 							<i class="fa fa-youtube"></i>
 						</a>
 					</div>
@@ -127,188 +200,408 @@
 
 		<div id="About" class="container-fluid section">
 			<div class="row">
-				<div data-aos="fade-right" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
+				<div
+					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl"
+					data-aos="fade-right">
 					<h3 class="brand">About Me</h3>
 					<h2>Specialist by need, Generalist by heart</h2>
-					<p class="lead">I've worked with full-stack systems for <strong>web</strong> and <strong>mobile</strong>, using whatever suits the project best. "Best" is of course subjective, so I keep exploring new options such as Flutter and others as they come!</p>
-					<a href="#Work" class="btn btn-primary">
+					<p class="lead">
+						I've worked with full-stack systems for <strong>web</strong> and <strong>mobile</strong>, using whatever suits the project best. "Best" is of course subjective, so I keep exploring new options such as Flutter and others as they come!
+					</p>
+					<a
+						class="btn btn-primary"
+						ref="#Work">
 						Check out my work
 					</a>
 				</div>
 				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-0">
-					<img data-aos="fade-up" data-aos-delay="200" src="/assets/about-dp.jpg" alt="Kaniganti Sai Tarun" class="img-fluid">
-					<p data-aos="fade-up" data-aos-delay="300" class="mt-5">You can find my complete experience on my <a rel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/kanigantisaitarun" class="lite">LinkedIn Profile.</a></p>
+					<img
+						alt="Kaniganti Sai Tarun"
+						class="img-fluid"
+						data-aos-delay="200"
+						data-aos="fade-up"
+						src="/assets/about-dp.jpg"
+						title="Kaniganti Sai Tarun">
+					<p
+						class="mt-5"
+						data-aos-delay="300"
+						data-aos="fade-up">
+						You can find my complete experience on my
+						<a
+							class="lite"
+							href="{{ site.social.linkedin }}"
+							rel="noopener noreferrer"
+							target="_blank">
+							LinkedIn Profile
+						</a>.
+					</p>
 				</div>
 				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-0 sans-serif">
-					<p data-aos="fade-up" data-aos-delay="400">I've previously worked for <strong>Accenture</strong> before moving on to <strong>Small Planet</strong>, where I currently work remotely as an Android Developer, primarily using Flutter for some cool stuff ✨</p>
-					<p data-aos="fade-up" data-aos-delay="500" class="lead">I'm a 10x Udacity Scholar, and currently under Bertelsmann Scholarship. I'm also a Mentor for <strong>Data Structures</strong> &amp; <strong>Java Development</strong> at <strong>Udacity</strong> and contribute actively to several open-source communities such as <strong>AnitaB.org</strong> and <strong>FOSSASIA</strong>.</p>
-					<p data-aos="fade-up" data-aos-delay="600" class="san-serif">As a student I've completed two internships, one with <strong>Shamgar Software Solutions</strong> and <strong>eBiz Solutions, LLC</strong>. I've also been a Campus Ambassador for <strong>GeeksForGeeks</strong> as well as for multiple college fests like <strong>Techfest, IIT-B</strong> and <strong>BITS-Pilani, Hyd Campus</strong>, amongst others.</p>
+					<p
+						data-aos-delay="400"
+						data-aos="fade-up">
+						I've previously worked for <strong>Accenture</strong> before moving on to <strong>Small Planet</strong>, where I currently work remotely as an Android Developer, primarily using Flutter for some cool stuff ✨</p>
+					<p class="lead"
+						data-aos-delay="500"
+						data-aos="fade-up">
+						I'm a 10x Udacity Scholar, and currently under Bertelsmann Scholarship. I'm also a Mentor for <strong>Data Structures</strong> &amp; <strong>Java Development</strong> at <strong>Udacity</strong> and contribute actively to several open-source communities such as <strong>AnitaB.org</strong> and <strong>FOSSASIA</strong>.</p>
+					<p
+						class="san-serif"
+						data-aos-delay="600"
+						data-aos="fade-up">
+						As a student I've completed two internships, one with <strong>Shamgar Software Solutions</strong> and <strong>eBiz Solutions, LLC</strong>. I've also been a Campus Ambassador for <strong>GeeksForGeeks</strong> as well as for multiple college fests like <strong>Techfest, IIT-B</strong> and <strong>BITS-Pilani, Hyd Campus</strong>, amongst others.</p>
 				</div>
 			</div>
 		</div>
 
-		<div id="Work" class="container-fluid section">
+		<div
+			class="container-fluid section"
+			id="Work">
 			<div class="row">
-				<div data-aos="fade-right" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl">
+				<div
+					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-3 offset-lg-2 brand-bl"
+					data-aos="fade-right">
 					<h3 class="brand">Work</h3>
 					<h2>Some Projects Feel Different</h2>
-					<p class="lead">I've dabbled in everything from web &amp; app development to game development and machine learning. These aren't just buzzwords, they're the future.</p>
-					<a rel="noopener noreferrer" target="_blank" href="https://play.google.com/store/apps/dev?id=6017027472682723980" class="btn btn-primary">
+					<p class="lead">
+						I've dabbled in everything from web &amp; app development to game development and machine learning. These aren't just buzzwords, they're the future.
+					</p>
+					<a
+						class="btn btn-primary"
+						href="{{site.social.google_play }}"
+						rel="noopener noreferrer"
+						target="_blank">
 						<i class="fa fa-android"></i>
 						Google Play
 					</a>
-					<a rel="noopener noreferrer" target="_blank" href="https://github.com/SAITARUN55" class="btn btn-primary">
+					<a
+						class="btn btn-primary"
+						href="{{ site.social.github }}"
+						rel="noopener noreferrer"
+						target="_blank">
 						<i class="fa fa-github"></i>
 						GitHub
 					</a>
 				</div>
 				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-0">
-					<ul data-aos="fade-up" data-aos-delay="450" class="cards-group">
+					<ul
+						class="cards-group"
+						data-aos-delay="450"
+						data-aos="fade-up">
 						<li>
-							<img src="/assets/work/mentorship-android.png" alt="Mentorship Android App">
+							<img
+								alt="Mentorship Android App"
+								src="/assets/work/mentorship-android.png">
 							<h4>Mentorship Android App</h4>
 							<h6>Systers Organization</h6>
 							<p>Mentorship System is an application that matches women in tech to mentor each other, on career development, through 1:1 relations during a certain period of time.</p>
 							<hr>
-							<a rel="noopener noreferrer" target="_blank" href="https://github.com/systers/mentorship-android">View&nbsp;Project&nbsp;→</a>
+							<a
+								href="https://github.com/systers/mentorship-android"
+								rel="noopener noreferrer"
+								target="_blank">
+								View&nbsp;Project&nbsp;→
+							</a>
 						</li>
 						<li>
-							<img src="/assets/work/gdgvizagdevfest.PNG" alt="GDG Vizag DevFest 2019">
+							<img
+								alt="GDG Vizag DevFest 2019"
+								src="/assets/work/gdgvizagdevfest.PNG">
 							<h4>GDG Vizag DevFest 2019</h4>
 							<h6>GDG Vizag</h6>
 							<p>The DevFest Mobile application is for all the GDG Devfests around the world. You can see the agenda in the app as well as the speakers and other updates regarding the devfest. Made with Flutter, entirely by myself.</p>
 							<hr>
-							<a rel="noopener noreferrer" target="_blank" href="https://github.com/SAITARUN55/GDGVizagDevFestApp">View&nbsp;Project&nbsp;→</a>
+							<a
+								href="https://github.com/SAITARUN55/GDGVizagDevFestApp"
+								rel="noopener noreferrer"
+								target="_blank">
+								View&nbsp;Project&nbsp;→
+							</a>
 						</li>
 						<li>
-							<img class="logo" src="/assets/work/susi.png" alt="SUSI.AI Android App">
+							<img
+								alt="SUSI.AI Android App"
+								class="logo"
+								src="/assets/work/susi.png">
 							<h4>SUSI.AI Android App</h4>
 							<h6>FOSSASIA</h6>
 							<p>This app provides a conversational interface to provide intelligent answers using the loklak/AskSusi infrastructure. I contributed to a few translations in their open-source project.</p>
 							<hr>
-							<a rel="noopener noreferrer" target="_blank" href="https://github.com/fossasia/susi_android
-							">View&nbsp;Project&nbsp;→</a>
+							<a
+								href="https://github.com/fossasia/susi_android"
+								rel="noopener noreferrer"
+								target="_blank">
+								View&nbsp;Project&nbsp;→
+							</a>
 							<a rel="noopener noreferrer" target="_blank" href="https://play.google.com/store/apps/details?id=ai.susi">View&nbsp;Live&nbsp;→</a>
 						</li>
 						<li>
-							<img class="logo" src="/assets/work/travelmate.png" alt="Travel Mate Android App">
+							<img
+								alt="Travel Mate Android App"
+								class="logo"
+								src="/assets/work/travelmate.png">
 							<h4>Travel Mate Android App</h4>
 							<h6>GirlScript Summer of Code 2019</h6>
 							<p>It is an app for travellers, providing features like managing bookings, organizing trips for any destination and also provides relevant information about locations: weather, places to hang out &amp; the city's current trends – any problem a traveler might face during their journey.</p>
 							<hr>
-							<a rel="noopener noreferrer" target="_blank" href="https://github.com/project-travel-mate/Travel-Mate">View&nbsp;Project&nbsp;→</a>
-							<a rel="noopener noreferrer" target="_blank" href="https://play.google.com/store/apps/details?id=io.github.project_travel_mate">View&nbsp;Live&nbsp;→</a>
+							<a
+								href="https://github.com/project-travel-mate/Travel-Mate"
+								rel="noopener noreferrer"
+								target="_blank">
+								View&nbsp;Project&nbsp;→
+							</a>
+							<a
+								href="https://play.google.com/store/apps/details?id=io.github.project_travel_mate"
+								rel="noopener noreferrer"
+								target="_blank">
+								View&nbsp;Live&nbsp;→
+							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<div id="Blog" class="container-fluid section">
+		<div
+			class="container-fluid section"
+			id="Blog">
 			<div class="row">
-				<div data-aos="fade-right" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 brand-bl">
+				<div
+				class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 brand-bl"
+				data-aos="fade-right">
 					<h3 class="brand">Blog</h3>
 					<h2>The written word travels far</h2>
-					<p class="lead">I've written several articles over the years on Medium and elsewhere. Here are some!</p>
-					<a rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti" class="btn btn-primary">
+					<p class="lead">
+						I've written several articles over the years on Medium and elsewhere. Here are some!
+					</p>
+					<a
+						class="btn btn-primary"
+						href="{{ site.social.medium }}"
+						rel="noopener noreferrer"
+						target="_blank">
 						<i class="fa fa-medium"></i>
 						Medium
 					</a>
 				</div>
-				<div data-aos="fade-up" data-aos-delay="450" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+				<div
+					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2"
+					data-aos-delay="450"
+					data-aos="fade-up">
 					<ul class="blog-articles">
 						<li>
-							<a rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti/from-developer-to-volunteer-to-speaker-fossasia-68e09715cb97">From Developer to Volunteer to Speaker @FOSSASIA</a>
+							<a
+								href="https://medium.com/@saitarunkaniganti/from-developer-to-volunteer-to-speaker-fossasia-68e09715cb97"
+								rel="noopener noreferrer"
+								target="_blank">
+								From Developer to Volunteer to Speaker @FOSSASIA
+							</a>
 						</li>
 						<li>
-							<a rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti/my-summer-internship-as-an-android-developer-30f1bb4b3b35">My Summer Internship as an Android Developer @Ebiz</a>
+							<a
+								href="https://medium.com/@saitarunkaniganti/my-summer-internship-as-an-android-developer-30f1bb4b3b35"
+								rel="noopener noreferrer"
+								target="_blank">
+								My Summer Internship as an Android Developer @Ebiz
+							</a>
 						</li>
 						<li>
-							<a rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti/kwoc-kharagpur-winter-of-code-2019-project-report-c822e3ca4c74">KWOC | Kharagpur Winter of Code 2019 | Project Report</a>
+							<a
+								href="https://medium.com/@saitarunkaniganti/kwoc-kharagpur-winter-of-code-2019-project-report-c822e3ca4c74"
+								rel="noopener noreferrer"
+								target="_blank">
+								KWOC | Kharagpur Winter of Code 2019 | Project Report
+							</a>
 						</li>
 						<li>
-							<a rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti/my-journey-google-udacity-scholarship-program-india-6e3dc1e3b266">My Journey: Google Udacity Scholarship Program — India</a>
+							<a
+								href="https://medium.com/@saitarunkaniganti/my-journey-google-udacity-scholarship-program-india-6e3dc1e3b266"
+								rel="noopener noreferrer"
+								target="_blank">
+								My Journey: Google Udacity Scholarship Program — India
+							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div id="YouTube" class="container-fluid section">
+		<div
+			class="container-fluid section"
+			id="YouTube">
 			<div class="row">
-				<div data-aos="fade-right" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 brand-bl">
+				<div
+					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 brand-bl"
+					data-aos="fade-right">
 					<h3 class="brand">YouTube?</h3>
 					<h2>I make decent tutorials too</h2>
 					<p class="lead">I've started uploading a few videos to start with. All feedback is welcome!</p>
-					<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/c/TravelCuriosity" class="btn btn-primary">
+					<a
+						class="btn btn-primary"
+						href="{{ site.social.youtube }}"
+						rel="noopener noreferrer"
+						target="_blank">
 						<i class="fa fa-youtube"></i>
 						YouTube
 					</a>
 				</div>
-				<div data-aos="fade-up" data-aos-delay="450" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+				<div
+				class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2"
+				data-aos-delay="450"
+				data-aos="fade-up">
 					<ul class="blog-articles">
 						<li>
-							<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=lulwjpEgoJg&t=1s">Flutter Tutorial for Beginners #1 - Scaffold & AppBar Widgets</a>
+							<a
+								href="https://www.youtube.com/watch?v=lulwjpEgoJg"
+								rel="noopener noreferrer"
+								target="_blank">
+								Flutter Tutorial for Beginners #1 - Scaffold &amp; AppBar Widgets
+							</a>
 						</li>
 						<li>
-							<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=uH64qViFgqU">Content Provider - Content Resolver and Cursor | Android Studio</a>
+							<a
+								href="https://www.youtube.com/watch?v=uH64qViFgqU"
+								rel="noopener noreferrer"
+								target="_blank">
+								Content Provider - Content Resolver and Cursor | Android Studio
+							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<div id="Star" class="container-fluid section">
+		<div
+			class="container-fluid section"
+			id="Star">
 			<div class="row">
-				<div data-aos="fade-right" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-4 brand-bl">
+				<div
+					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-4 brand-bl"
+					data-aos="fade-right">
 					<h3 class="brand">Like what you see?</h3>
 					<h2>Tell me about your project</h2>
-					<p class="lead">I'm currently actively looking for opportunities to work on interesting projects with an awesome team. <a href="mailto:saitarunkaniganti@gmail.com" class="lite">Email me</a> to get connected or you could send me a 👋 on <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/SAITARUN1997" class="lite">Twitter</a>!</p>
+					<p class="lead">
+						I'm currently actively looking for opportunities to work on interesting projects with an awesome team.
+						<a
+							class="lite"
+							href="mailto:{{ site.social.email }}">
+							Email me
+						</a>
+						to get connected or you could send me a 👋 on
+						<a
+							class="lite"
+							href="{{ site.social.twitter_url }}"
+							rel="noopener noreferrer"
+							target="_blank">
+							Twitter
+						</a>
+					</p>
 				</div>
 			</div>
 		</div>
 
-		<footer id="End-Game" class="container-fluid">
+		<footer
+			class="container-fluid"
+			id="End-Game">
 			<div class="container">
 				<div class="row">
-					<div data-aos="fade" class="col-10 offset-1 col-md-2 offset-md-1 col-lg-2 offset-lg-1">
-						<a href="#Home" class="monogram" title="Kaniganti Sai Tarun">KST</a>
+					<div
+						class="col-10 offset-1 col-md-2 offset-md-1 col-lg-2 offset-lg-1"
+						data-aos="fade">
+						<a
+							class="monogram"
+							href="#Home"
+							title="Kaniganti Sai Tarun">
+							KST
+						</a>
 					</div>
 					<div class="col-10 offset-1 col-md-6 offset-md-1 col-lg-5 offset-lg-0">
-						<p data-aos="fade" data-aos-delay="50" class="lead">
+						<p
+							class="lead"
+							data-aos-delay="50"
+							data-aos="fade">
 							I try to stay active on LinkedIn, Twitter &amp; Instagram at all times, but I never forget to check my mail!
 						</p>
 						<div class="footer-icon-links">
-							<a data-aos="fade" data-aos-delay="50" rel="noopener noreferrer" target="_blank" href="https://github.com/SAITARUN55">
+							<a
+								ata-aos-delay="50"
+								data-aos="fade"
+								href="{{ site.social.github }}"
+								rel="noopener noreferrer"
+								target="_blank">
 								<i class="fa fa-github"></i>
 							</a>
-							<a data-aos="fade" data-aos-delay="100" rel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/kanigantisaitarun">
+							<a
+								ata-aos-delay="100"
+								data-aos="fade"
+								href="{{ site.social.linkedin }}"
+								rel="noopener noreferrer"
+								target="_blank">
 								<i class="fa fa-linkedin"></i>
 							</a>
-							<a data-aos="fade" data-aos-delay="150" rel="noopener noreferrer" target="_blank" href="https://twitter.com/SAITARUN1997">
+							<a
+								ata-aos-delay="150"
+								data-aos="fade"
+								href="{{ site.social.twitter_url }}"
+								rel="noopener noreferrer"
+								target="_blank">
 								<i class="fa fa-twitter"></i>
 							</a>
-							<a data-aos="fade" data-aos-delay="200" rel="noopener noreferrer" target="_blank" href="https://medium.com/@saitarunkaniganti">
+							<a
+								ata-aos-delay="200"
+								data-aos="fade"
+								href="{{ site.social.medium }}"
+								rel="noopener noreferrer"
+								target="_blank">
 								<i class="fa fa-medium"></i>
 							</a>
-							<a data-aos="fade" data-aos-delay="250" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/saitarunkaniganti55">
+							<a
+								ata-aos-delay="250"
+								data-aos="fade"
+								href="{{ site.social.facebook }}"
+								rel="noopener noreferrer"
+								target="_blank">
 								<i class="fa fa-facebook"></i>
 							</a>
-							<a data-aos="fade" data-aos-delay="300" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/kanigantisaitarun">
+							<a
+								ata-aos-delay="300"
+								data-aos="fade"
+								href="{{ site.social.instagram }}"
+								rel="noopener noreferrer"
+								target="_blank">
 								<i class="fa fa-instagram"></i>
 							</a>
-							<a data-aos="fade" data-aos-delay="350" rel="noopener noreferrer" target="_blank" href="http://www.youtube.com/c/TravelCuriosity">
+							<a
+								ata-aos-delay="350"
+								data-aos="fade"
+								href="{{ site.social.youtube }}"
+								rel="noopener noreferrer"
+								target="_blank">
 								<i class="fa fa-youtube"></i>
 							</a>
 						</div>
 					</div>
-					<div data-aos="fade" data-aos-delay="450" class="col-10 offset-1 col-md-8 offset-md-2 col-lg-2 offset-lg-1 text-center text-lg-left">
+					<div
+						class="col-10 offset-1 col-md-8 offset-md-2 col-lg-2 offset-lg-1 text-center text-lg-left"
+						data-aos-delay="450"
+						data-aos="fade">
 						<p>
 							&copy; 2019—Present <br>
-							<a class="ajit" href="https://github.com/SAITARUN55/Portfolio" rel="noopener noreferrer" target="_blank">Kaniganti Sai Tarun</a>.
+							<a
+								class="ajit"
+								href="{{ site.repo_url }}"
+								rel="noopener noreferrer"
+								target="_blank">
+								Kaniganti Sai Tarun
+							</a>.
 						</p>
 						<p>
 							Designed &amp; built by <br>
-							<a class="ajit" href="https://www.twitter.com/ajitzero" rel="noopener noreferrer" target="_blank">Ajit Panigrahi</a>.
+							<a
+								class="ajit"
+								href="https://ajitpanigrahi.com"
+								rel="noopener noreferrer"
+								target="_blank">
+								Ajit Panigrahi
+							</a>.
 						</p>
 					</div>
 				</div>
