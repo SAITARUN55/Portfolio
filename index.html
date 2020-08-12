@@ -387,22 +387,16 @@
 				data-aos-delay="450"
 				data-aos="fade-up">
 					<ul class="blog-articles">
+						{% for video in site.data.videos %}
 						<li>
 							<a
-								href="https://www.youtube.com/watch?v=lulwjpEgoJg"
+								href="{{ video.url }}"
 								rel="noopener noreferrer"
 								target="_blank">
-								Flutter Tutorial for Beginners #1 - Scaffold &amp; AppBar Widgets
+								{{ video.title }}
 							</a>
 						</li>
-						<li>
-							<a
-								href="https://www.youtube.com/watch?v=uH64qViFgqU"
-								rel="noopener noreferrer"
-								target="_blank">
-								Content Provider - Content Resolver and Cursor | Android Studio
-							</a>
-						</li>
+						{% endfor %}
 					</ul>
 				</div>
 			</div>
