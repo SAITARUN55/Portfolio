@@ -1,0 +1,44 @@
+repo_url: https://github.com/SAITARUN55/Portfolio
+title: Kaniganti Sai Tarun | Portfolio
+description: >-
+  I'm a creative Android developer based in India, currently working remotely at Small Planet. I'm huge into open-source development and love to contribute back to the community. Interested in working together? Drop me a line!
+
+og:
+  title: Kaniganti Sai Tarun's Portfolio
+  image_height: 1440
+  image_width: 1080
+  image_url: http://ksaitarun.com/assets/profile.jpg
+
+social:
+  email: saitarunkaniganti@gmail.com
+  facebook: https://www.facebook.com/saitarunkaniganti55
+  github: https://github.com/SAITARUN55
+  google_play: https://play.google.com/store/apps/dev?id=6017027472682723980
+  instagram: https://www.instagram.com/kanigantisaitarun
+  linkedin: https://linkedin.com/in/kanigantisaitarun
+  medium: https://medium.com/@saitarunkaniganti
+  twitter_id: SAITARUN1997
+  twitter_url: https://twitter.com/SAITARUN1997
+  youtube: https://www.youtube.com/c/TravelCuriosity
+
+theme_color: #77cbd4
+baseurl: "" # repo name, leave blank for user/org pages.
+url: "http://ksaitarun.com" # Full URL, always.
+
+permalink: /:title
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+sass:
+  style: :compressed
+
+# These won't matter for drop-in HTML replacements
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
