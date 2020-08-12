@@ -1,0 +1,31 @@
+- title: Mentorship Android App
+  made_for: Systers Organization
+  description: Mentorship System is an application that matches women in tech to mentor each other, on career development, through 1:1 relations during a certain period of time.
+  img_alt: Mentorship Android App
+  img_url: /assets/work/mentorship-android.png
+  source_url: https://github.com/systers/mentorship-android
+
+- title: GDG Vizag DevFest 2019
+  made_for: GDG Vizag
+  description: The DevFest Mobile application is for all the GDG Devfests around the world. You can see the agenda in the app as well as the speakers and other updates regarding the devfest. Made with Flutter, entirely by myself.
+  img_alt: GDG Vizag DevFest 2019
+  img_url: /assets/work/gdgvizagdevfest.PNG
+  source_url: https://github.com/SAITARUN55/GDGVizagDevFestApp
+
+- title: SUSI.AI Android App
+  made_for: FOSSASIA
+  description: The DevFest Mobile application is for all the GDG Devfests around the world. You can see the agenda in the app as well as the speakers and other updates regarding the devfest. Made with Flutter, entirely by myself.
+  img_alt: SUSI.AI Android App
+  img_url: /assets/work/susi.png
+  img_type_logo: true
+  source_url: https://github.com/fossasia/susi_android
+  demo_url: https://play.google.com/store/apps/details?id=ai.susi
+
+- title: Travel Mate Android App
+  made_for: GirlScript Summer of Code 2019
+  description: It is an app for travellers, providing features like managing bookings, organizing trips for any destination and also provides relevant information about locations - weather, places to hang out &amp; the city's current trends – any problem a traveler might face during their journey.
+  img_alt: Travel Mate Android App
+  img_url: /assets/work/travelmate.png
+  img_type_logo: true
+  source_url: https://github.com/project-travel-mate/Travel-Mate
+  demo_url: https://play.google.com/store/apps/details?id=io.github.project_travel_mate
