@@ -288,75 +288,36 @@
 						class="cards-group"
 						data-aos-delay="450"
 						data-aos="fade-up">
+						{% for project in site.data.projects %}
 						<li>
 							<img
-								alt="Mentorship Android App"
-								src="/assets/work/mentorship-android.png">
-							<h4>Mentorship Android App</h4>
-							<h6>Systers Organization</h6>
-							<p>Mentorship System is an application that matches women in tech to mentor each other, on career development, through 1:1 relations during a certain period of time.</p>
-							<hr>
-							<a
-								href="https://github.com/systers/mentorship-android"
-								rel="noopener noreferrer"
-								target="_blank">
-								View&nbsp;Project&nbsp;→
-							</a>
-						</li>
-						<li>
-							<img
-								alt="GDG Vizag DevFest 2019"
-								src="/assets/work/gdgvizagdevfest.PNG">
-							<h4>GDG Vizag DevFest 2019</h4>
-							<h6>GDG Vizag</h6>
-							<p>The DevFest Mobile application is for all the GDG Devfests around the world. You can see the agenda in the app as well as the speakers and other updates regarding the devfest. Made with Flutter, entirely by myself.</p>
-							<hr>
-							<a
-								href="https://github.com/SAITARUN55/GDGVizagDevFestApp"
-								rel="noopener noreferrer"
-								target="_blank">
-								View&nbsp;Project&nbsp;→
-							</a>
-						</li>
-						<li>
-							<img
-								alt="SUSI.AI Android App"
+								alt="{{ project.img_alt }}"
+								{% if project.img_type_logo %}
 								class="logo"
-								src="/assets/work/susi.png">
-							<h4>SUSI.AI Android App</h4>
-							<h6>FOSSASIA</h6>
-							<p>This app provides a conversational interface to provide intelligent answers using the loklak/AskSusi infrastructure. I contributed to a few translations in their open-source project.</p>
+								{% endif %}
+								src="{{ project.img_url }}">
+							<h4>{{ project.title }}</h4>
+							<h6>{{ project.made_for }}</h6>
+							<p>{{ project.description }}</p>
 							<hr>
+							{% if project.source_url %}
 							<a
-								href="https://github.com/fossasia/susi_android"
+								href="{{ project.source_url }}"
 								rel="noopener noreferrer"
 								target="_blank">
 								View&nbsp;Project&nbsp;→
 							</a>
-							<a rel="noopener noreferrer" target="_blank" href="https://play.google.com/store/apps/details?id=ai.susi">View&nbsp;Live&nbsp;→</a>
-						</li>
-						<li>
-							<img
-								alt="Travel Mate Android App"
-								class="logo"
-								src="/assets/work/travelmate.png">
-							<h4>Travel Mate Android App</h4>
-							<h6>GirlScript Summer of Code 2019</h6>
-							<p>It is an app for travellers, providing features like managing bookings, organizing trips for any destination and also provides relevant information about locations: weather, places to hang out &amp; the city's current trends – any problem a traveler might face during their journey.</p>
-							<hr>
+							{% endif %}
+							{% if project.demo_url %}
 							<a
-								href="https://github.com/project-travel-mate/Travel-Mate"
-								rel="noopener noreferrer"
-								target="_blank">
-								View&nbsp;Project&nbsp;→
-							</a>
-							<a
-								href="https://play.google.com/store/apps/details?id=io.github.project_travel_mate"
+								href="{{ project.demo_url }}"
 								rel="noopener noreferrer"
 								target="_blank">
 								View&nbsp;Live&nbsp;→
 							</a>
+							{% endif %}
 						</li>
+						{% endfor %}
 					</ul>
 				</div>
 			</div>
