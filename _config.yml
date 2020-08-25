@@ -21,7 +21,7 @@ social:
   twitter_url: https://twitter.com/SAITARUN1997
   youtube: https://www.youtube.com/c/TravelCuriosity
 
-theme_color: #77cbd4
+theme_color: "#77cbd4"
 baseurl: "" # repo name, leave blank for user/org pages.
 url: "http://ksaitarun.com" # Full URL, always.
 
