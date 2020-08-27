@@ -1,0 +1,40 @@
+---
+layout: page
+title: My Articles
+description: I've written several articles about my internship and project experiences
+---
+
+<ul class="blog-list">
+  {% for article in site.data.articles %}<li>
+    <a
+      href="{{ article.url }}"
+      rel="noopener noreferrer"
+      target="_blank">
+      {% if article.img_url %}<img
+        alt="{{ article.img_alt | default: article.title }}"
+        src="{{ article.img_url }}">{% endif %}
+      <div class="blog-content{% unless article.img_url %} no-image{% endunless %}">
+        <h4 class="title">{{ article.title }}</h4>
+        <ul>
+          {% if article.date %}<li>
+            <i class="fa fa-calendar"></i>
+            {{ article.date }}
+          </li>{% endif %}
+          {% if article.reading_time %}<li>
+            <i class="fa fa-hourglass-half"></i>
+            {{ article.reading_time }} minutes
+          </li>{% endif %}
+        </ul>
+      </div>
+    </a>
+  </li>{% endfor %}
+</ul>
+
+<a
+  class="btn btn-primary my-5"
+  href="{{ site.social.medium }}"
+  rel="noopener noreferrer"
+  target="_blank">
+  <i class="fa fa-medium"></i>
+  Medium
+</a>
