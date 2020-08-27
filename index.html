@@ -355,13 +355,29 @@
 					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2"
 					data-aos-delay="450"
 					data-aos="fade-up">
-					<ul class="blog-articles">
+					<ul class="blog-list">
 						{% for article in site.data.articles %}<li>
 							<a
 								href="{{ article.url }}"
 								rel="noopener noreferrer"
 								target="_blank">
-								{{ article.title }}
+								{% if article.img_url %}<img
+									alt="{{ article.img_alt | default: article.title }}"
+									class="logo"
+									src="{{ article.img_url }}">{% endif %}
+								<div class="blog-content{% unless article.img_url %} no-image{% endunless %}">
+									<h4 class="title">{{ article.title }}</h4>
+									<ul>
+										{% if article.date %}<li>
+											<i class="fa fa-calendar"></i>
+											{{ article.date }}
+										</li>{% endif %}
+										{% if article.reading_time %}<li>
+											<i class="fa fa-hourglass-half"></i>
+											{{ article.reading_time }} minutes
+										</li>{% endif %}
+									</ul>
+								</div>
 							</a>
 						</li>{% endfor %}
 					</ul>
@@ -394,7 +410,7 @@
 					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2"
 					data-aos-delay="450"
 					data-aos="fade-up">
-					<ul class="blog-articles">
+					<ul class="video-list">
 						{% for video in site.data.videos %}<li>
 							<a
 								href="{{ video.url }}"
