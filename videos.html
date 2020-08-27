@@ -1,0 +1,30 @@
+---
+layout: page
+title: My Videos
+description: I've started uploading a few videos on Android, Flutter & Data Structures. All feedback is welcome!
+---
+
+<ul class="blog-list for-videos">
+  {% for video in site.data.videos %}<li>
+    <a
+      href="{{ video.url }}"
+      rel="noopener noreferrer"
+      target="_blank">
+      {% if video.img_url %}<img
+        alt="{{ video.img_alt | default: video.title }}"
+        src="{{ video.img_url }}">{% endif %}
+      <div class="blog-content{% unless video.img_url %} no-image{% endunless %}">
+        <h4 class="title">{{ video.title }}</h4>
+      </div>
+    </a>
+  </li>{% endfor %}
+</ul>
+
+<a
+  class="btn btn-primary my-5"
+  href="{{ site.social.youtube }}"
+  rel="noopener noreferrer"
+  target="_blank">
+  <i class="fa fa-youtube"></i>
+  YouTube
+</a>
