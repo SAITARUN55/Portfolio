@@ -1,1 +1,333 @@
-{{ content }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="{{ page.description | default:site.description }}">
+	<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+	<!-- OpenGraph -->
+	<meta property="og:description" content="{{ page.description | default:site.description }}">
+	<meta property="og:image:height" content="{{ site.og.image_height }}" />
+	<meta property="og:image:width" content="{{ site.og.image_width }}" />
+	<meta property="og:image" content="{{ site.og.image_url }}">
+	<meta property="og:site_name" content="{% if page.title %}{{ page.title}} | {% endif %}{{ site.title }}">
+	<meta property="og:title" content="{% if page.title %}{{ page.title}} | {% endif %}{{ site.title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:creator" content="@{{ site.social.twitter_id }}">
+	<meta name="twitter:description" content="{{ page.description | default:site.description }}">
+	<meta name="twitter:image" content="{{ site.og.image_url }}">
+	<meta name="twitter:site" content="@{{ site.social.twitter_id }}">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title}} | {% endif %}{{ site.title }}">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicon/manifest.json">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="msapplication-TileColor" content="{{ site.theme_color }}">
+	<meta name="theme-color" content="{{ site.theme_color }}">
+
+	<title>{% if page.title %}{{ page.title}} | {% endif %}{{ site.title }}</title>
+
+	<link rel="preconnect" href="https://unpkg.com/" crossorigin>
+	<link rel="dns-prefetch" href="https://unpkg.com/" crossorigin>
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com/" crossorigin>
+
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap@4.5.2/dist/css/bootstrap.min.css" crossorigin />
+	<link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" crossorigin />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<!-- Navigation section -->
+	<nav
+		class="navbar navbar-expand-xl fixed-top"
+		data-aos-delay="700"
+		data-aos="fade-down"
+		id="TopMenu">
+		<div class="container">
+			<a
+				class="navbar-brand monogram"
+				href="{{ site.url }}/#Home"
+				title="Kaniganti Sai Tarun">
+				KST
+			</a>
+			<button
+				aria-controls="menu"
+				aria-expanded="false"
+				aria-label="Toggle Navigation"
+				class="navbar-toggler"
+				data-target="#PrimaryMenu"
+				data-toggle="collapse"
+				type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div
+				class="collapse navbar-collapse"
+				id="PrimaryMenu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{% if page.url != "/" %}{{ site.url }}/{% endif %}#Home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% if page.url != "/" %}{{ site.url }}/{% endif %}#About">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% if page.url != "/" %}{{ site.url }}/{% endif %}#Work">Work</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% if page.url != "/" %}{{ site.url }}/{% endif %}#Blog">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% if page.url != "/" %}{{ site.url }}/{% endif %}#YouTube">YouTube</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div
+		class="container-fluid"
+		id="wrapper">
+
+    {{ content }}
+
+		<div
+			class="container-fluid section"
+			id="Star">
+			<div class="row">
+				<div
+					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-4 brand-bl"
+					data-aos="fade-right">
+					<h3 class="brand">Like what you see?</h3>
+					<h2>Tell me about your project</h2>
+					<p class="lead">
+						I'm currently actively looking for opportunities to work on interesting projects with an awesome team.
+						<a
+							class="lite"
+							href="mailto:{{ site.social.email }}">
+							Email me
+						</a>
+						to get connected or you could send me a 👋 on
+						<a
+							class="lite"
+							href="{{ site.social.twitter_url }}"
+							rel="noopener noreferrer"
+							target="_blank">
+							Twitter
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<footer
+			class="container-fluid"
+			id="End-Game">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-10 offset-1 col-md-2 offset-md-1 col-lg-2 offset-lg-1"
+						data-aos="fade">
+						<a
+							class="monogram"
+							href="#Home"
+							title="Kaniganti Sai Tarun">
+							KST
+						</a>
+					</div>
+					<div class="col-10 offset-1 col-md-6 offset-md-1 col-lg-5 offset-lg-0">
+						<p
+							class="lead"
+							data-aos-delay="50"
+							data-aos="fade">
+							I try to stay active on LinkedIn, Twitter &amp; Instagram at all times, but I never forget to check my mail!
+						</p>
+						<div class="footer-icon-links">
+							<a
+								ata-aos-delay="50"
+								data-aos="fade"
+								href="{{ site.social.github }}"
+								rel="noopener noreferrer"
+								target="_blank">
+								<i class="fa fa-github"></i>
+							</a>
+							<a
+								ata-aos-delay="100"
+								data-aos="fade"
+								href="{{ site.social.linkedin }}"
+								rel="noopener noreferrer"
+								target="_blank">
+								<i class="fa fa-linkedin"></i>
+							</a>
+							<a
+								ata-aos-delay="150"
+								data-aos="fade"
+								href="{{ site.social.twitter_url }}"
+								rel="noopener noreferrer"
+								target="_blank">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a
+								ata-aos-delay="200"
+								data-aos="fade"
+								href="{{ site.social.medium }}"
+								rel="noopener noreferrer"
+								target="_blank">
+								<i class="fa fa-medium"></i>
+							</a>
+							<a
+								ata-aos-delay="250"
+								data-aos="fade"
+								href="{{ site.social.facebook }}"
+								rel="noopener noreferrer"
+								target="_blank">
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a
+								ata-aos-delay="300"
+								data-aos="fade"
+								href="{{ site.social.instagram }}"
+								rel="noopener noreferrer"
+								target="_blank">
+								<i class="fa fa-instagram"></i>
+							</a>
+							<a
+								ata-aos-delay="350"
+								data-aos="fade"
+								href="{{ site.social.youtube }}"
+								rel="noopener noreferrer"
+								target="_blank">
+								<i class="fa fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+					<div
+						class="col-10 offset-1 col-md-8 offset-md-2 col-lg-2 offset-lg-1 text-center text-lg-left"
+						data-aos-delay="450"
+						data-aos="fade">
+						<p>
+							&copy; 2019—Present <br>
+							<a
+								class="ajit"
+								href="{{ site.repo_url }}"
+								rel="noopener noreferrer"
+								target="_blank">
+								Kaniganti Sai Tarun
+							</a>.
+						</p>
+						<p>
+							Designed &amp; built by <br>
+							<a
+								class="ajit"
+								href="https://ajitpanigrahi.com"
+								rel="noopener noreferrer"
+								target="_blank">
+								Ajit Panigrahi
+							</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://unpkg.com/jquery@3.5.1/dist/jquery.slim.min.js" crossorigin></script>
+	<script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin></script>
+	<script src="https://unpkg.com/bootstrap@4.5.2/dist/js/bootstrap.min.js" crossorigin></script>
+
+	<!-- AOS Js -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js" crossorigin></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133363733-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-133363733-2', { 'anonymize_ip': true });
+	</script>
+
+	<!-- Custom Js -->
+	<script>
+		AOS.init({
+			easing: 'ease-in-cubic',
+		});
+
+		$(function () {
+			// Make navbar opaque on scroll
+			var navbar = $('.navbar');
+
+			function setBg() {
+				navbar.addClass('nav-scroll-in');
+			}
+			function unsetBg() {
+				navbar.removeClass('nav-scroll-in');
+			}
+
+			$('.navbar-toggler').on('click', function() {
+				setBg();
+			});
+
+			$(window).on('scroll click', function() {
+				// `true` must be a string for `attr()`
+				if ($('.navbar-toggler').attr('aria-expanded') === 'true' || $(this).scrollTop() >= 150) {
+					setBg();
+				} else {
+					unsetBg();
+				}
+			});
+
+			// update `.active` for current menu area
+			var topMenu = $('#PrimaryMenu');
+			var topMenuHeight = topMenu.outerHeight();
+			var menuItems = topMenu.find('li a');
+			var scrollItems = menuItems.map(function () {
+				var item = $($(this).attr('href'));
+				if (item.length) {
+					return item;
+				}
+			});
+
+			$(window).on('scroll', function () {
+				var fromTop = $(this).scrollTop() + topMenuHeight;
+				var cur = scrollItems.map(function () {
+					if ($(this).offset().top < fromTop) {
+						return this;
+					}
+				});
+				cur = cur[cur.length - 1];
+				var id = cur && cur.length ? cur[0].id : '';
+				menuItems.parent().removeClass("active")
+				.end().filter('[href="#' + id + '"]')
+				.parent().addClass('active');
+			});
+
+			// Close navbar on click
+			$('.nav-link').on('click', function() {
+				$('.navbar-collapse').collapse('hide');
+			});
+
+		});
+	</script>
+</body>
+</html>
