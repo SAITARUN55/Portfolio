@@ -1,3 +1,13 @@
+# Format: (Uncomment & edit)
+# - title: "(mandatory)"
+#   url: "(mandatory)"
+#   img_alt: "(optional)"
+#   img_url: "(optional)"
+
+- title: "DSA Interview Prep Series Episode 1"
+  url: "https://youtu.be/iwHmBafeybY"
+  img_url: /assets/videos/dsa-interview-prep-series-e1.jpeg
+
 - title: "Flutter Tutorial for Beginners #1 - Scaffold & AppBar Widgets"
   url: "https://www.youtube.com/watch?v=lulwjpEgoJg"
 
