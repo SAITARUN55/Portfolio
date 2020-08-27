@@ -363,7 +363,6 @@
 								target="_blank">
 								{% if article.img_url %}<img
 									alt="{{ article.img_alt | default: article.title }}"
-									class="logo"
 									src="{{ article.img_url }}">{% endif %}
 								<div class="blog-content{% unless article.img_url %} no-image{% endunless %}">
 									<h4 class="title">{{ article.title }}</h4>
@@ -410,13 +409,18 @@
 					class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2"
 					data-aos-delay="450"
 					data-aos="fade-up">
-					<ul class="video-list">
+					<ul class="blog-list for-videos">
 						{% for video in site.data.videos %}<li>
 							<a
 								href="{{ video.url }}"
 								rel="noopener noreferrer"
 								target="_blank">
-								{{ video.title }}
+								{% if video.img_url %}<img
+									alt="{{ video.img_alt | default: video.title }}"
+									src="{{ video.img_url }}">{% endif %}
+								<div class="blog-content{% unless video.img_url %} no-image{% endunless %}">
+									<h4 class="title">{{ video.title }}</h4>
+								</div>
 							</a>
 						</li>{% endfor %}
 					</ul>
