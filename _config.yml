@@ -7,7 +7,7 @@ og:
   title: Kaniganti Sai Tarun's Portfolio
   image_height: 1440
   image_width: 1080
-  image_url: http://ksaitarun.com/assets/profile.jpg
+  image_url: https://ksaitarun.com/assets/profile.jpg
 
 social:
   email: saitarunkaniganti@gmail.com
@@ -23,7 +23,7 @@ social:
 
 theme_color: "#77cbd4"
 baseurl: "" # repo name, leave blank for user/org pages.
-url: "http://ksaitarun.com" # Full URL, always.
+url: "https://ksaitarun.com" # Full URL, always.
 
 permalink: /:title
 
