@@ -13,6 +13,8 @@ This is the codebase for my personal portfolio!
   - title: "From Developer to Volunteer to Speaker @FOSSASIA"
     url: "https://medium.com/@saitarunkaniganti/from-developer-to-volunteer-to-speaker-fossasia-68e09715cb97"
   ```
+  - `img_alt`, `img_url`, `date` and `reading_time` are optional.
+  - `title` is used in place of `img_alt`, when required.
 
 - Projects: [Source](https://github.com/SAITARUN55/Portfolio/blob/master/_data/projects.yml)
   ```yaml
@@ -26,6 +28,7 @@ This is the codebase for my personal portfolio!
     demo_url: https://play.google.com/store/apps/details?id=ai.susi
   ```
   - `source_url` and `demo_url` are optional and do not render if empty.
+  - `img_alt` is also optional, instead we use `title` in place of `img_alt`.
   - `img_type_logo` is set to true, a CSS class `.logo` is added to the image. Effect: Reduced width.
 
 - Videos: [Source](https://github.com/SAITARUN55/Portfolio/blob/master/_data/videos.yml)
@@ -33,6 +36,8 @@ This is the codebase for my personal portfolio!
   - title: "Flutter Tutorial for Beginners #1 - Scaffold & AppBar Widgets"
     url: "https://www.youtube.com/watch?v=lulwjpEgoJg"
   ```
+  - `img_alt` and `img_url` are optional.
+  - `title` is used in place of `img_alt`, when required.
 
 ## Meta
 
