@@ -305,7 +305,7 @@
 						data-aos="fade-up">
 						{% for project in site.data.projects %}<li>
 							<img
-								alt="{{ project.img_alt }}"
+								alt="{{ project.img_alt | default: project.title }}"
 								{% if project.img_type_logo %}class="logo"{% endif %}
 								src="{{ project.img_url }}">
 							<h4>{{ project.title }}</h4>
