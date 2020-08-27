@@ -47,7 +47,7 @@ This is the codebase for my personal portfolio!
 - Uses [Bootstrap 4.5.2](https://getbootstrap.com).
 - Icons by [Font Awesome](https://fontawesome.com).
 - Built with [Jekyll](https://jekyllrb.com) & [Sass](https://sass-lang.com/).
-- Hosted on [GitHub Pages](https://pages.github.com).
+- Hosted on ~~[GitHub Pages](https://pages.github.com)~~ [Netlify](https://netlify.com)!
 
 **License:** Distributed under the [MIT License](https://opensource.org/licenses/MIT).
 
