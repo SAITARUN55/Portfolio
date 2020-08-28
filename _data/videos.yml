@@ -3,6 +3,9 @@
 #   url: "(mandatory)"
 #   img_alt: "(optional)"
 #   img_url: "(optional)"
+- title: "DSA Interview Prep Series Episode 2"
+  url: "https://youtu.be/ZQbvZDdP4PQ"
+  img_url: /assets/videos/dsa-interview-prep-series-e2.jpeg
 
 - title: "DSA Interview Prep Series Episode 1"
   url: "https://youtu.be/iwHmBafeybY"
