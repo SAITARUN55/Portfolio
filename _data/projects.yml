@@ -14,7 +14,7 @@
 
 - title: SUSI.AI Android App
   made_for: FOSSASIA
-  description: The DevFest Mobile application is for all the GDG Devfests around the world. You can see the agenda in the app as well as the speakers and other updates regarding the devfest. Made with Flutter, entirely by myself.
+  description: This app provides a conversational interface to provide intelligent answers using the loklak/AskSusi infrastructure. It offers login functionalities to connect to other services and store personal data. I contributed to a few translations in their open-source project.
   img_alt: SUSI.AI Android App
   img_url: /assets/work/susi.png
   img_type_logo: true
