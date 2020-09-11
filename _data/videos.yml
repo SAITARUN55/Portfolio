@@ -3,6 +3,14 @@
 #   url: "(mandatory)"
 #   img_alt: "(optional)"
 #   img_url: "(optional)"
+- title: "Android App Development Webinar"
+  url: "https://youtu.be/2ebKKNrnfSM"
+  img_url: /assets/videos/android1.jpg
+  
+- title: "DSA Interview Prep Series Episode 3"
+  url: "https://youtu.be/zihWgyudogs"
+  img_url: /assets/videos/dsa-interview-prep-series-e3.jpeg
+  
 - title: "DSA Interview Prep Series Episode 2"
   url: "https://youtu.be/ZQbvZDdP4PQ"
   img_url: /assets/videos/dsa-interview-prep-series-e2.jpeg
