@@ -9,7 +9,8 @@ description: I've written several articles about my internship and project exper
     <a
       href="{{ article.url }}"
       rel="noopener noreferrer"
-      target="_blank">
+      target="_blank"
+      title="{{ article.title }}">
       {% if article.img_url %}<img
         alt="{{ article.img_alt | default: article.title }}"
         src="{{ article.img_url }}">{% endif %}
