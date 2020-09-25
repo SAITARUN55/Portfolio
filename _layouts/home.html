@@ -261,7 +261,8 @@ layout: default
 					<a
 						href="{{ article.url }}"
 						rel="noopener noreferrer"
-						target="_blank">
+						target="_blank"
+						title="{{ article.title }}">
 						{% if article.img_url %}<img
 							alt="{{ article.img_alt | default: article.title }}"
 							src="{{ article.img_url }}">{% endif %}
@@ -321,7 +322,8 @@ layout: default
 					<a
 						href="{{ video.url }}"
 						rel="noopener noreferrer"
-						target="_blank">
+						target="_blank"
+						title="{{ video.title }}">
 						{% if video.img_url %}<img
 							alt="{{ video.img_alt | default: video.title }}"
 							src="{{ video.img_url }}">{% endif %}
