@@ -9,7 +9,8 @@ description: I've started uploading a few videos on Android, Flutter & Data Stru
     <a
       href="{{ video.url }}"
       rel="noopener noreferrer"
-      target="_blank">
+      target="_blank"
+      title="{{ video.title }}">
       {% if video.img_url %}<img
         alt="{{ video.img_alt | default: video.title }}"
         src="{{ video.img_url }}">{% endif %}
