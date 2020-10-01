@@ -23,7 +23,6 @@ This is the codebase for my personal portfolio!
   - title: SUSI.AI Android App
     made_for: FOSSASIA
     description: The DevFest Mobile application is for all the GDG Devfests around the world. You can see the agenda in the app as well as the speakers and other updates regarding the devfest. Made with Flutter, entirely by myself.
-    img_alt: SUSI.AI Android App
     img_url: /assets/work/susi.png
     img_type_logo: true
     source_url: https://github.com/fossasia/susi_android
@@ -46,9 +45,8 @@ This is the codebase for my personal portfolio!
 - Designed by [Ajit Panigrahi](https://ajitpanigrahi.com).
 - Uses [Bootstrap 4.5.2](https://getbootstrap.com).
 - Icons by [Font Awesome](https://fontawesome.com).
+- Animations with [AOS](https://michalsnik.github.io/aos/).
 - Built with [Jekyll](https://jekyllrb.com) & [Sass](https://sass-lang.com/).
 - Hosted on ~~[GitHub Pages](https://pages.github.com)~~ [Netlify](https://netlify.com)!
 
-**License:** Distributed under the [MIT License](https://opensource.org/licenses/MIT).
-
-See [`LICENSE`](https://github.com/SAITARUN55/Portfolio/blob/master/LICENSE) for more information.
+**License:** Distributed under the [MIT License](https://opensource.org/licenses/MIT). See [`LICENSE`](https://github.com/SAITARUN55/Portfolio/blob/master/LICENSE) for more information.
