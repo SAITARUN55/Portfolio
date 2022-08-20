@@ -1,7 +1,7 @@
 repo_url: https://github.com/SAITARUN55/Portfolio
 title: Kaniganti Sai Tarun | Portfolio
 description: >-
-  I'm a creative Android developer based in India, currently working remotely at Small Planet. I'm huge into open-source development and love to contribute back to the community. Interested in working together? Drop me a line!
+  I'm a Software Development Engineer working at Amazon with the Amazon Web Services (AWS) Connect Team. I'm huge into open-source development and love to contribute back to the community. Interested in working together? Drop me a line!
 
 og:
   title: Kaniganti Sai Tarun's Portfolio
@@ -9,7 +9,13 @@ og:
   image_width: 1080
   image_url: https://ksaitarun.com/assets/profile.jpg
 
+cta:
+  primary: Hire Me!
+
 social:
+  name_initials: KST
+  full_name: Kaniganti Sai Tarun
+  short_name: Sai Tarun
   email: saitarunkaniganti@gmail.com
   facebook: https://www.facebook.com/saitarunkaniganti55
   github: https://github.com/SAITARUN55
